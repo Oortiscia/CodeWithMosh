@@ -10,6 +10,23 @@ int main()
 }
 */
 
+/*
+#include "iostream"
+#include "cstdlib" // random function.
+#include "ctime"   // for time function.
+using namespace std;
+int main()
+{
+  const short minValue = 1;
+  const short maxValue = 6;
+  srand(time(nullptr));
+  short dice1 = (rand() % (maxValue - minValue + 1)) + 1; // limiting the range of random numbers that we get.
+  short dice2 = (rand() % (maxValue - minValue + 1)) + 1;
+  cout << dice1 << endl
+       << dice2;
+}
+*/
+
 /* //manipulators.
 #include "iomanip" //io manipulator.
 #include "iostream"
@@ -223,6 +240,11 @@ int main()
   }
   cout << output;
 }
-  */
+*/
 
-  
+#include "iostream"
+using namespace std;
+int main()
+{
+  cout << "work in progmess";
+}
