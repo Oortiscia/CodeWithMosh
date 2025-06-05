@@ -477,6 +477,97 @@ void dice() {
   int firstDice = (rand() % (maxValue - minValue + 1)) + 1;
   int secondDice = (rand() % (maxValue - minValue + 1)) + 1;
   cout << firstDice << " and " << secondDice;
+} */
+
+// assigning defualt value for parameters. (tax calculator)
+/* #include "iostream"
+using namespace std;
+double cTax(double income, double taxRate = .2) {  // cannot code a parameter
+without a default value after taxRate; double tax = income * taxRate; return
+tax;
+}
+int main() {
+  cout << cTax(500, .4) << endl
+       << cTax(500);
+} */
+
+// overloading functions.
+/* #include "iostream"
+using namespace std;
+
+void greet(string name) { cout << "hello " << name << endl; }
+// function signature: function name, number and type of parameters.
+void greet(string title, string name) { //
+  cout << "hello " << title << " " << name << endl;
+}
+// this "name" parameter is not related to the previous name parameter.
+
+int main() {
+  greet("farham");
+  greet("mr", "mosh");
+} */
+
+// passing arguments by value or reference.
+/* #include "iostream"
+using namespace std;
+
+// double priceIncrease(double price) {
+//   price *= 1.2;
+//   return price;
+//   // "price" in this block isn't related to the next block
+// }
+// int main() {
+//   double price = 100;
+
+//   cout << priceIncrease(price) << endl;
+
+//   priceIncrease(price);
+//   cout << price << endl;
+// }
+
+void increasePrice(double &price) {
+  // the '&' puts "price" as reference to a double.
+  price *= 1.2;
+}
+int main() {
+  double x = 100;
+  increasePrice(x);
+  cout << x; // 'x' is overwritten despite being in another block.
+} */
+
+// declaring a function.
+/* #include "iostream"
+using namespace std;
+
+// declaring our function (function prototype)
+void greet(string name);
+
+int main() { greet("farham"); }
+
+// function definition.
+void greet(string name) { cout << "hello " << name << endl; } */
+
+// using namespaces.
+/* #include "iostream"
+using namespace std;
+// using namespace hello;
+
+namespace hello {
+  void oddNums(int number) {
+    for (int i = 1; i <= number; i += 1) {
+      if (i % 2 == 0)
+      continue;
+      else {
+        cout << i << endl;
+      }
+    }
+  }
 }
 
-int main() { dice(); } */
+int main() {
+  hello::oddNums(24);
+} */
+
+#include "iostream"
+using std::cout;
+int main() { cout << "end of part 1"; }
