@@ -170,11 +170,11 @@ cout << boolalpha
 using namespace std;
 int main()
 {
-  double yeasrsOfExperienc;
+  double yearsOfExperience;
   string isUsCitizen;
   string hasBachelorDegree;
-  bool isUsCitizen0, hasBecholarDegree0, yeasrsOfExperienc0; // variables with 0
-in the notation are boolean.
+  bool isUsCitizen0, hasBecholarDegree0, yearsOffExperience0; // variables with
+0 in the notation are boolean.
 
   cout << "are you a US citizen? (yes/no) ";
   cin >> isUsCitizen;
@@ -193,14 +193,14 @@ in the notation are boolean.
     hasBecholarDegree0 = true;
   }
 
-  cout << "how many yesrs of experience do you have? ";
-  cin >> yeasrsOfExperienc;
-  if (yeasrsOfExperienc >= 2)
+  cout << "how many years of experience do you have? ";
+  cin >> yearsOfExperience;
+  if (yearsOfExperience >= 2)
   {
-    yeasrsOfExperienc0 = true;
+    yearsOffExperience0 = true;
   }
 
-  if ((isUsCitizen0 && (hasBecholarDegree0 || yeasrsOfExperienc0)))
+  if ((isUsCitizen0 && (hasBecholarDegree0 || yearsOffExperience0)))
   {
     cout << endl
          << "you are our pick";
@@ -212,7 +212,7 @@ in the notation are boolean.
   return 1;
 } */
 
-// conditional opperator.
+// conditional operator.
 /* #include "iostream"
 using namespace std;
 int main()
@@ -260,7 +260,7 @@ int main()
   cout << output;
 } */
 
-// coardinates.
+// coordinates.
 /* #include "iostream"
 using namespace std;
 int main()
@@ -377,12 +377,12 @@ using namespace std;
 int main()
 {
   int secretNumber = 7;
-  int geuess;
-  cin >> geuess;
-  while (geuess != 7)
+  int guess;
+  cin >> guess;
+  while (guess != 7)
   {
     cout << "number: ";
-    cin >> geuess;
+    cin >> guess;
   }
   return 1;
 } */
@@ -438,7 +438,7 @@ string fullName(string first, string last) { return first + " " + last; }
 void greet(string name) { cout << "hello " << name << endl; }
 int main() { greet(fullName("farham", "shakeri")); } */
 
-// a function for length caculation. (skips spaces)
+// a function for length calculation. (skips spaces)
 /* void length(string name) { // these values are parameters.
   int j = 0;
   int k = 0;
@@ -458,13 +458,13 @@ using namespace std;
 
 int maxNum(int firstNum, int secondNum) {
   return (firstNum > secondNum) ? firstNum : secondNum; // conditional
-opperator.
+operator.
 }
 int main() {
   cout << maxNum(2, 1);
 } */
 
-// beacuse why not.
+// because why not.
 /* #include "cstdlib"
 #include "ctime"
 #include "iostream"
@@ -479,7 +479,7 @@ void dice() {
   cout << firstDice << " and " << secondDice;
 } */
 
-// assigning defualt value for parameters. (tax calculator)
+// assigning default value for parameters. (tax calculator)
 /* #include "iostream"
 using namespace std;
 double cTax(double income, double taxRate = .2) {  // cannot code a parameter
@@ -591,5 +591,20 @@ void star(int number) {
     for (int j = 0; j < i; j += 1) {
       cout << "*";
     }
+  }
+} */
+
+// copy array.
+/* #include "iostream"
+using namespace std;
+int main() {
+  int myArray[] = {1, 2, 3, 4, 5, 6, 7, 8, 1, 3, 2, 6, 8};
+  int yourArray[size(myArray)] = {};
+
+  for (int i = 0; i < size(myArray); i += 1) {
+    yourArray[i] = myArray[i];
+  }
+  for (int i : yourArray) {
+    cout << i << endl;
   }
 } */
