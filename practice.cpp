@@ -605,6 +605,29 @@ int main() {
     yourArray[i] = myArray[i];
   }
   for (int i : yourArray) {
-    cout << i << endl;
+    cout << "your array contains: " << i << endl;
   }
 } */
+
+// structured binding (python:unpacking)
+/* #include "iostream"
+using namespace std;
+int main() {
+  int values[] = {12, 33, 2};
+  auto [x, y, z] = values;
+  cout << x << endl << y << endl << z;
+} */
+
+// searching arrays
+/* #include "iostream"
+using namespace std;
+
+int find(int array[], size_t size, int target) {
+  for (int i = 0; i < size; i++) {
+    if (array[i] == target) {
+      return i;
+    }
+  }
+  return -1;
+} */
+
